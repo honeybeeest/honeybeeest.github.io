@@ -13,6 +13,7 @@
 
         h1 {
             text-align: center;
+            color: #f3682d;
         }
 
         .container {
@@ -26,33 +27,106 @@
         p {
             line-height: 1.6;
         }
+
+        /* Gaya CSS untuk navbar */
+        .navbar {
+            background-color: #f3682d;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Gaya CSS untuk slider */
+        .slider {
+            width: 100%;
+            height: 300px;
+            background-image: url('slider.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        /* Gaya CSS untuk card */
+        .card {
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #f3682d;
+        }
+
+        .card p {
+            color: #666;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Sejarah</a></li>
+                <li><a href="#">Keunggulan</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+
+        <div class="slider"></div>
+
         <h1>Honeybeeest - Madu Pilihan</h1>
 
-        <h2>Sejarah Produk</h2>
-        <p>Sejak didirikan pada tahun XX, Honeybeeest telah menjadi produsen dan distributor madu terkemuka di industri. Kami bangga menyajikan madu berkualitas tinggi dengan standar kualitas yang ketat, diproduksi dengan perhatian penuh terhadap kesehatan lebah dan kelestarian lingkungan.</p>
+        <div class="card">
+            <h3>Sejarah Produk</h3>
+            <p>Sejak didirikan pada tahun XX, Honeybeeest telah menjadi produsen dan distributor madu terkemuka di industri. Kami bangga menyajikan madu berkualitas tinggi dengan standar kualitas yang ketat, diproduksi dengan perhatian penuh terhadap kesehatan lebah dan kelestarian lingkungan.</p>
+        </div>
 
-        <h2>Keunggulan Produk</h2>
-        <ul>
-            <li>Kualitas Terbaik: Madu Honeybeeest dihasilkan dari nektar bunga terbaik dan diproses dengan teknologi modern untuk menjaga keutuhan nutrisi alami.</li>
-            <li>Organik dan Alami: Madu kami diproduksi tanpa menggunakan bahan kimia berbahaya, sehingga memberikan manfaat kesehatan maksimal.</li>
-            <li>Lebah Terjaga: Kami memastikan lebah-lebah kami hidup dalam kondisi yang baik, dengan memberikan perlindungan dan pengelolaan yang berkelanjutan.</li>
-            <li>Pelbagai Varian: Honeybeeest menawarkan berbagai macam varian madu, mulai dari madu bunga, madu manuka, hingga madu lidah buaya.</li>
-            <li>Kemasan Ramah Lingkungan: Kami mengutamakan penggunaan kemasan yang ramah lingkungan untuk mengurangi dampak negatif terhadap planet kita.</li>
-        </ul>
+        <div class="card">
+            <h3>Keunggulan Produk</h3>
+                        <p>Kami memiliki beberapa keunggulan dalam produk kami:</p>
+            <ul>
+                <li>Kualitas Terbaik: Madu Honeybeeest dihasilkan dari nektar bunga terbaik dan diproses dengan teknologi modern untuk menjaga keutuhan nutrisi alami.</li>
+                <li>Organik dan Alami: Madu kami diproduksi tanpa menggunakan bahan kimia berbahaya, sehingga memberikan manfaat kesehatan maksimal.</li>
+                <li>Lebah Terjaga: Kami memastikan lebah-lebah kami hidup dalam kondisi yang baik, dengan memberikan perlindungan dan pengelolaan yang berkelanjutan.</li>
+                <li>Pelbagai Varian: Honeybeeest menawarkan berbagai macam varian madu, mulai dari madu bunga, madu manuka, hingga madu lidah buaya.</li>
+                <li>Kemasan Ramah Lingkungan: Kami mengutamakan penggunaan kemasan yang ramah lingkungan untuk mengurangi dampak negatif terhadap planet kita.</li>
+            </ul>
+        </div>
 
-        <h2>Produk Kami</h2>
-        <p>Kunjungi halaman <a href="produk.html">Produk Kami</a> untuk melihat berbagai macam madu berkualitas yang kami tawarkan.</p>
+        <div class="card">
+            <h3>Produk Kami</h3>
+            <p>Kunjungi halaman <a href="#">Produk Kami</a> untuk melihat berbagai macam madu berkualitas yang kami tawarkan.</p>
+        </div>
 
-        <h2>Hubungi Kami</h2>
-        <p>Jika Anda memiliki pertanyaan atau ingin memesan produk kami, silakan hubungi kami melalui:</p>
-        <ul>
-            <li>Email: info@honeybeeest.com</li>
-            <li>Telepon: 123-456-7890</li>
-        </ul>
+        <div class="card">
+            <h3>Hubungi Kami</h3>
+            <p>Jika Anda memiliki pertanyaan atau ingin memesan produk kami, silakan hubungi kami melalui:</p>
+            <ul>
+                <li>Email: info@honeybeeest.com</li>
+                <li>Telepon: 123-456-7890</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
+
