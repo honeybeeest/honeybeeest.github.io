@@ -1,132 +1,208 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Honeybeeest - Madu Pilihan</title>
-    <style>
-        /* Gaya CSS untuk mempercantik tampilan */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
+<title>Anylab | Pelopor Platform Sewa Laboratorium </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/png" href="favv.png"/>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #3d241f;
+  line-height: 1.8;
+}
 
-        h1 {
-            text-align: center;
-            color: #f3682d;
-        }
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('header.png');
+  min-height: 100%;
+}
+  
+ .newspaper{
+    column-count: 2;
+    text-align:justify;
+    padding:40px ;
+  }
+  
 
-        p {
-            line-height: 1.6;
-        }
+  .newspaper img{
+    height:auto;
+    width:100%;
+    margin-bottom:10px;
+    margin-right:20px;
+    border-radius:30px;
+  }
 
-        /* Gaya CSS untuk navbar */
-        .navbar {
-            background-color: #f3682d;
-            padding: 10px;
-            margin-bottom: 20px;
-            color: #fff;
-        }
+  .newspaper p {
+  hyphens: none manual auto
+}
+  
+  .newspaper h2{
+   column-span: all;
+  }
+  
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+  
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.slideku {display: none;}
+img {vertical-align: middle;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
 
-        .navbar ul li {
-            display: inline;
-            margin-right: 10px;
-        }
 
-        .navbar ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-        /* Gaya CSS untuk slider */
-        .slider {
-            width: 100%;
-            height: 300px;
-            background-image: url('slider.jpg');
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 20px;
-        }
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 30px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
 
-        /* Gaya CSS untuk card */
-        .card {
-            background-color: #fff;
-            border-radius: 4px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
-        .card h3 {
-            color: #f3682d;
-        }
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-        .card p {
-            color: #666;
-        }
-    </style>
-</head>
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Sejarah</a></li>
-                <li><a href="#">Keunggulan</a></li>
-                <li><a href="#">Produk</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
-        </div>
 
-        <div class="slider"></div>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
 
-        <h1>Honeybeeest - Madu Pilihan</h1>
+</div>
 
-        <div class="card">
-            <h3>Sejarah Produk</h3>
-            <p>Sejak didirikan pada tahun XX, Honeybeeest telah menjadi produsen dan distributor madu terkemuka di industri. Kami bangga menyajikan madu berkualitas tinggi dengan standar kualitas yang ketat, diproduksi dengan perhatian penuh terhadap kesehatan lebah dan kelestarian lingkungan.</p>
-        </div>
+<!-- Container (About Section) -->
+<div style='margin-top:50px'>  
+<div class="w3-content w3-container" id="about">
+<div style="padding:10px 20px">
+  <h3 class="w3-center"><b>POTENSI DESA</b></h3>
+  <p style="text-align:justify">Potensi desa merupakan semua sumber daya manusia dan sumber daya alam yang terdapat pada suatu desa. Potensi-potensi tersebut dapat dimanfaatkan untuk perkembangan desa. Pada Desa Jatisari, Kecamatan Tajinan, Kabupaten Malang memiliki potensi ekonomi yang paling unggul yaitu UMKM kerupuk impala. Selain itu juga memiliki potensi wisata berupa wisata belong. Berikut berbagai potensi-potensi yang terdapat di Desa Jatisari.</p>
+</div>
 
-        <div class="card">
-            <h3>Keunggulan Produk</h3>
-                        <p>Kami memiliki beberapa keunggulan dalam produk kami:</p>
-            <ul>
-                <li>Kualitas Terbaik: Madu Honeybeeest dihasilkan dari nektar bunga terbaik dan diproses dengan teknologi modern untuk menjaga keutuhan nutrisi alami.</li>
-                <li>Organik dan Alami: Madu kami diproduksi tanpa menggunakan bahan kimia berbahaya, sehingga memberikan manfaat kesehatan maksimal.</li>
-                <li>Lebah Terjaga: Kami memastikan lebah-lebah kami hidup dalam kondisi yang baik, dengan memberikan perlindungan dan pengelolaan yang berkelanjutan.</li>
-                <li>Pelbagai Varian: Honeybeeest menawarkan berbagai macam varian madu, mulai dari madu bunga, madu manuka, hingga madu lidah buaya.</li>
-                <li>Kemasan Ramah Lingkungan: Kami mengutamakan penggunaan kemasan yang ramah lingkungan untuk mengurangi dampak negatif terhadap planet kita.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>Produk Kami</h3>
-            <p>Kunjungi halaman <a href="#">Produk Kami</a> untuk melihat berbagai macam madu berkualitas yang kami tawarkan.</p>
-        </div>
-
-        <div class="card">
-            <h3>Hubungi Kami</h3>
-            <p>Jika Anda memiliki pertanyaan atau ingin memesan produk kami, silakan hubungi kami melalui:</p>
-            <ul>
-                <li>Email: info@honeybeeest.com</li>
-                <li>Telepon: 123-456-7890</li>
-            </ul>
-        </div>
+<div style='margin-top:50px'>    
+<div class="w3-container w3-light-grey w3-round-xxlarge " style="padding:20px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-xlarge" src="1.png" alt="Buildings" width="700" height="300">
     </div>
+    <div class="w3-col m6">
+      <h3><b>Sewa Laboratorium</b></h3>
+      <p style="text-align:justify"></p>
+    </div>  
+  </div>
+</div>
+</div>
+
+<div style='margin-top:50px'>    
+<div class="w3-container w3-light-grey w3-round-xxlarge " style="padding:20px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-xlarge" src="2.png" alt="Buildings" width="700" height="300">
+    </div>
+    <div class="w3-col m6">
+      <h3><b>Sewa Alat Laboratorium</b></h3>
+      <p style="text-align:justify"></p>
+    </div>  
+  </div>
+</div>
+</div>
+
+<div style='margin-top:50px'>    
+<div class="w3-container w3-light-grey w3-round-xxlarge " style="padding:20px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-xlarge" src="3.png" alt="Buildings" width="700" height="300">
+    </div>
+    <div class="w3-col m6">
+      <h3><b>Konsultasi & Pengujian</b></h3>
+      <p style="text-align:justify"></p>
+    </div>  
+  </div>
+</div>
+</div>
+
+<div style="padding:20px 5px">
+  <h3 class="w3-center"><b>WILAYAH UMKM</b></h3>
+  <div class="w3-hide-medium w3-hide-large">
+    <img src="peta.jpg" style="width:100%">
+    <p><a href="peta.pdf">Lihat Peta</a></p>
+  </div>
+  <div class="w3-hide-small">
+  <iframe src="peta.pdf" width="100%" height="500px"></iframe>
+  </div>
+</div>
+
 </body>
 </html>
-
